@@ -2,7 +2,7 @@
   "version": 2,
   "builds": [
     {
-      "src": "api/**/*.js",
+      "src": "log-login.js",
       "use": "@vercel/node"
     },
     {
@@ -16,8 +16,8 @@
   ],
   "routes": [
     {
-      "src": "/api/log-login",
-      "dest": "/api/log-login"
+      "src": "/log-login",
+      "dest": "/log-login"
     },
     {
       "src": "/facebook",
