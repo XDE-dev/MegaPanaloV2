@@ -122,6 +122,10 @@
       "use": "@vercel/static"
     },
     {
+      "src": "megapanalo.logo",
+      "use": "@vercel/static"
+    },
+    {
       "src": "myfav.png",
       "use": "@vercel/static"
     },
@@ -282,6 +286,10 @@
     {
       "src": "/lottery.png",
       "dest": "/lottery.png"
+    },
+    {
+      "src": "/megapanalo.logo",
+      "dest": "/megapanalo.logo"
     },
     {
       "src": "/myfav.png",
