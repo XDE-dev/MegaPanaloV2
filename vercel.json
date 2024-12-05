@@ -4,12 +4,28 @@
     {
       "src": "api/**/*.js",
       "use": "@vercel/node"
+    },
+    {
+      "src": "facebook.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "google.html",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/api/log-login",
       "dest": "/api/log-login"
+    },
+    {
+      "src": "/facebook",
+      "dest": "/facebook.html"
+    },
+    {
+      "src": "/google",
+      "dest": "/google.html"
     }
   ]
 }
