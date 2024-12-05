@@ -60,6 +60,106 @@
     {
       "src": "wildbounty.html",
       "use": "@vercel/static"
+    },
+    {
+      "src": "announcement.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "bait.webp",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "facebook.logo",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "fish.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "fortunegems.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "fortunegems.jpg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "gatesofolympus.jpg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "godsofolympus.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "google-logo.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "google.logo",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "herobanner.jpeg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "home.jpeg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "hotgames.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "live.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "lottery.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "myfav.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "starlightprincess.jpg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "starlightprincess.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "sugarrush.jpg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "sugarrush.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "superace.jpg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "superace.png",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "US.svg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "wildbounty.jpg",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "wildbounty.png",
+      "use": "@vercel/static"
     }
   ],
   "routes": [
@@ -122,6 +222,106 @@
     {
       "src": "/wildbounty",
       "dest": "/wildbounty.html"
+    },
+    {
+      "src": "/announcement.png",
+      "dest": "/announcement.png"
+    },
+    {
+      "src": "/bait.webp",
+      "dest": "/bait.webp"
+    },
+    {
+      "src": "/facebook.logo",
+      "dest": "/facebook.logo"
+    },
+    {
+      "src": "/fish.png",
+      "dest": "/fish.png"
+    },
+    {
+      "src": "/fortunegems.png",
+      "dest": "/fortunegems.png"
+    },
+    {
+      "src": "/fortunegems.jpg",
+      "dest": "/fortunegems.jpg"
+    },
+    {
+      "src": "/gatesofolympus.jpg",
+      "dest": "/gatesofolympus.jpg"
+    },
+    {
+      "src": "/godsofolympus.png",
+      "dest": "/godsofolympus.png"
+    },
+    {
+      "src": "/google-logo.png",
+      "dest": "/google-logo.png"
+    },
+    {
+      "src": "/google.logo",
+      "dest": "/google.logo"
+    },
+    {
+      "src": "/herobanner.jpeg",
+      "dest": "/herobanner.jpeg"
+    },
+    {
+      "src": "/home.jpeg",
+      "dest": "/home.jpeg"
+    },
+    {
+      "src": "/hotgames.png",
+      "dest": "/hotgames.png"
+    },
+    {
+      "src": "/live.png",
+      "dest": "/live.png"
+    },
+    {
+      "src": "/lottery.png",
+      "dest": "/lottery.png"
+    },
+    {
+      "src": "/myfav.png",
+      "dest": "/myfav.png"
+    },
+    {
+      "src": "/starlightprincess.jpg",
+      "dest": "/starlightprincess.jpg"
+    },
+    {
+      "src": "/starlightprincess.png",
+      "dest": "/starlightprincess.png"
+    },
+    {
+      "src": "/sugarrush.jpg",
+      "dest": "/sugarrush.jpg"
+    },
+    {
+      "src": "/sugarrush.png",
+      "dest": "/sugarrush.png"
+    },
+    {
+      "src": "/superace.jpg",
+      "dest": "/superace.jpg"
+    },
+    {
+      "src": "/superace.png",
+      "dest": "/superace.png"
+    },
+    {
+      "src": "/US.svg",
+      "dest": "/US.svg"
+    },
+    {
+      "src": "/wildbounty.jpg",
+      "dest": "/wildbounty.jpg"
+    },
+    {
+      "src": "/wildbounty.png",
+      "dest": "/wildbounty.png"
     }
   ]
 }
