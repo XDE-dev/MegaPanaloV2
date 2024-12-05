@@ -4,28 +4,12 @@
     {
       "src": "log-login.js",
       "use": "@vercel/node"
-    },
-    {
-      "src": "facebook.html",
-      "use": "@vercel/static"
-    },
-    {
-      "src": "google.html",
-      "use": "@vercel/static"
     }
   ],
   "routes": [
     {
       "src": "/log-login",
       "dest": "/log-login"
-    },
-    {
-      "src": "/facebook",
-      "dest": "/facebook.html"
-    },
-    {
-      "src": "/google",
-      "dest": "/google.html"
     }
   ]
 }
