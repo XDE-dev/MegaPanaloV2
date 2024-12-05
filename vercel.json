@@ -6,7 +6,19 @@
       "use": "@vercel/node"
     },
     {
+      "src": "fortunegems.html",
+      "use": "@vercel/static"
+    },
+    {
       "src": "facebook.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "gatesofolympus.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "google.css",
       "use": "@vercel/static"
     },
     {
@@ -14,7 +26,39 @@
       "use": "@vercel/static"
     },
     {
+      "src": "home.html",
+      "use": "@vercel/static"
+    },
+    {
       "src": "index.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "login.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "script.js",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "starlightprincess.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "styles.css",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "sugarrush.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "superace.html",
+      "use": "@vercel/static"
+    },
+    {
+      "src": "wildbounty.html",
       "use": "@vercel/static"
     }
   ],
@@ -24,16 +68,60 @@
       "dest": "/log-login"
     },
     {
+      "src": "/fortunegems",
+      "dest": "/fortunegems.html"
+    },
+    {
       "src": "/facebook",
       "dest": "/facebook.html"
+    },
+    {
+      "src": "/gatesofolympus",
+      "dest": "/gatesofolympus.html"
+    },
+    {
+      "src": "/google.css",
+      "dest": "/google.css"
     },
     {
       "src": "/google",
       "dest": "/google.html"
     },
     {
+      "src": "/home",
+      "dest": "/home.html"
+    },
+    {
       "src": "/",
       "dest": "/index.html"
+    },
+    {
+      "src": "/login",
+      "dest": "/login.html"
+    },
+    {
+      "src": "/script.js",
+      "dest": "/script.js"
+    },
+    {
+      "src": "/starlightprincess",
+      "dest": "/starlightprincess.html"
+    },
+    {
+      "src": "/styles.css",
+      "dest": "/styles.css"
+    },
+    {
+      "src": "/sugarrush",
+      "dest": "/sugarrush.html"
+    },
+    {
+      "src": "/superace",
+      "dest": "/superace.html"
+    },
+    {
+      "src": "/wildbounty",
+      "dest": "/wildbounty.html"
     }
   ]
 }
